@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: adsegvfd
+  name: basdfegg
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: adsegvfd
+      app: basdfegg
   template:
     metadata:
       labels:
-        app: adsegvfd
+        app: basdfegg
     spec:
       containers:
-      - image: okteto.dev/adsegvfd:latest
-        name: adsegvfd
+      - image: okteto.dev/basdfegg:latest
+        name: basdfegg
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: Site
           value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
         - name: Vless_UUID
-          value: "9508db48-0eea-4ae5-92c7-4a8c34c2f50b"
+          value: "2ec9b846-a9d3-4e44-9e68-486e9f7c294b"
         - name: Vless_Path
           value: "/vlghj2457eds"
         - name: Vmess_UUID
-          value: "9508db48-0eea-4ae5-92c7-4a8c34c2f50b"
+          value: "2ec9b846-a9d3-4e44-9e68-486e9f7c294b"
         - name: Vmess_Path
           value: "/vmewqrh65dhj"
         - name: Share_Path
